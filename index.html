@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Asian American Grocery</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img class="logo" src="https://picsum.photos/90" alt="logo" />
+    <div class="brand-text">
+      <h1>Asian American Grocery</h1>
+      <p>Your One-Stop Asian Food Market</p>
+    </div>
+  </div>
+
+  <!-- "Hidden menu" = sections are hidden until clicked -->
+  <nav class="nav">
+    <button class="nav-btn active" data-target="intro">Introduction</button>
+    <button class="nav-btn" data-target="shop">Shop</button>
+    <button class="nav-btn" data-target="sale">Sale</button>
+    <button class="nav-btn" data-target="contact">Contact</button>
+  </nav>
+</header>
+
+<main>
+  <!-- INTRO (slideshow moved here; Home removed) -->
+  <section id="intro" class="page-section is-active">
+    <div class="slideshow">
+      <img class="slide active" src="https://picsum.photos/1200/420?random=1" alt="Slide 1">
+      <img class="slide" src="https://picsum.photos/1200/420?random=2" alt="Slide 2">
+      <img class="slide" src="https://picsum.photos/1200/420?random=3" alt="Slide 3">
+      <img class="slide" src="https://picsum.photos/1200/420?random=4" alt="Slide 4">
+      <img class="slide" src="https://picsum.photos/1200/420?random=5" alt="Slide 5">
+      <img class="slide" src="https://picsum.photos/1200/420?random=6" alt="Slide 6">
+      <img class="slide" src="https://picsum.photos/1200/420?random=7" alt="Slide 7">
+      <img class="slide" src="https://picsum.photos/1200/420?random=8" alt="Slide 8">
+      <div class="slide-overlay">
+        <h2>Fresh • Snacks • Drinks • More</h2>
+        <p>Swap these pictures with your real products anytime.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Introduction</h2>
+      <p>We sell:</p>
+      <ul class="bullet-grid">
+        <li><a class="intro-link" data-cat="produce" href="#shop">Fresh Vegetables & fruits</a></li>
+        <li><a class="intro-link" data-cat="rice" href="#shop">Rice & Noodles</a></li>
+        <li><a class="intro-link" data-cat="snack" href="#shop">Snacks & Sweets</a></li>
+        <li><a class="intro-link" data-cat="frozen" href="#shop">Frozen Dumplings</a></li>
+        <li><a class="intro-link" data-cat="all" href="#shop">Seafood & Meat</a></li>
+        <li><a class="intro-link" data-cat="all" href="#shop">Sauces & Spices</a></li>
+        <li><a class="intro-link" data-cat="drink" href="#shop">Drinks & Tea</a></li>
+        <li><a class="intro-link" data-cat="all" href="#shop">Bakery Items</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="page-section">
+    <div class="container">
+      <h2>Shop</h2>
+
+      <div class="controls">
+        <input type="text" id="search" placeholder="Search items..." />
+        <select id="category">
+          <option value="all">All</option>
+          <option value="snack">Snacks</option>
+          <option value="drink">Drinks</option>
+          <option value="rice">Rice</option>
+          <option value="frozen">Frozen</option>
+          <option value="produce">Produce</option>
+        </select>
+      </div>
+
+      <div class="shop-grid">
+        <div class="item" data-cat="rice"><div class="imgbox"><img src="https://picsum.photos/320/220?random=11" alt=""></div><h4>Jasmine Rice</h4><p>$15</p></div>
+        <div class="item" data-cat="snack"><div class="imgbox"><img src="https://picsum.photos/320/220?random=12" alt=""></div><h4>Pocky</h4><p>$3</p></div>
+        <div class="item" data-cat="drink"><div class="imgbox"><img src="https://picsum.photos/320/220?random=13" alt=""></div><h4>Matcha Tea</h4><p>$5</p></div>
+        <div class="item" data-cat="snack"><div class="imgbox"><img src="https://picsum.photos/320/220?random=14" alt=""></div><h4>Shrimp Chips</h4><p>$2</p></div>
+        <div class="item" data-cat="drink"><div class="imgbox"><img src="https://picsum.photos/320/220?random=15" alt=""></div><h4>Ramune Soda</h4><p>$4</p></div>
+        <div class="item" data-cat="rice"><div class="imgbox"><img src="https://picsum.photos/320/220?random=16" alt=""></div><h4>Ramen Pack</h4><p>$6</p></div>
+        <div class="item" data-cat="frozen"><div class="imgbox"><img src="https://picsum.photos/320/220?random=17" alt=""></div><h4>Frozen Dumplings</h4><p>$9</p></div>
+        <div class="item" data-cat="produce"><div class="imgbox"><img src="https://picsum.photos/320/220?random=18" alt=""></div><h4>Bok Choy</h4><p>$2</p></div>
+        <div class="item" data-cat="snack"><div class="imgbox"><img src="https://picsum.photos/320/220?random=19" alt=""></div><h4>Mochi</h4><p>$4</p></div>
+        <div class="item" data-cat="drink"><div class="imgbox"><img src="https://picsum.photos/320/220?random=21" alt=""></div><h4>Milk Tea</h4><p>$5</p></div>
+        <div class="item" data-cat="rice"><div class="imgbox"><img src="https://picsum.photos/320/220?random=22" alt=""></div><h4>Soba Noodles</h4><p>$4</p></div>
+        <div class="item" data-cat="produce"><div class="imgbox"><img src="https://picsum.photos/320/220?random=23" alt=""></div><h4>Asian Pear</h4><p>$3</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SALE -->
+  <section id="sale" class="page-section">
+    <div class="container">
+      <h2>Sales & Specials</h2>
+      <div class="sale-cards">
+        <div class="sale-card">
+          <h3>Snack Special</h3>
+          <p>Buy 2 Get 1 Free on select snacks.</p>
+        </div>
+        <div class="sale-card">
+          <h3>Weekend Drink Deal</h3>
+          <p>10% off bottled drinks this weekend.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="page-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Info</h3>
+          <p><b>Email:</b> store@email.com</p>
+          <p><b>Phone:</b> 123-456-7890</p>
+          <p><b>Instagram:</b> @store</p>
+          <p><b>Facebook:</b> Store Page</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Store Schedule</h3>
+          <p>All Days: 8AM–8PM</p>
+        </div>
+      </div>
+
+      <!-- Demo reviews (6–7) under contact/schedule -->
+      <div class="reviews">
+        <h3>Customer Reviews</h3>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="review-meta">Customer Name • Date</div>
+          <p class="review-text">Amazing selection and super friendly staff!</p>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="review-meta">Customer Name • Date</div>
+          <p class="review-text">Clean store, great prices, and fresh produce.</p>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <div class="review-meta">Customer Name • Date</div>
+          <p class="review-text">Lots of snacks and drinks I can’t find anywhere else.</p>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="review-meta">Customer Name • Date</div>
+          <p class="review-text">Frozen dumplings are top-tier. Will come again!</p>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <div class="review-meta">Customer Name • Date</div>
+          <p class="review-text">Good variety of noodles and sauces. Love it.</p>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="review-meta">Customer Name • Date</div>
+          <p class="review-text">Fast checkout and the store is always stocked.</p>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <div class="review-meta">Customer Name • Date</div>
+          <p class="review-text">Best local Asian grocery — highly recommend!</p>
+        </div>
+
+        <!-- Button to Google Reviews (moved to bottom) -->
+        <a class="primary-btn link-btn" href="https://www.google.com/search?q=your+store+name+google+reviews" target="_blank" rel="noopener noreferrer">
+          Leave a Google Review
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Asian American Grocery</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
