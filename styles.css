@@ -283,6 +283,118 @@ body {
 
 
 /* =========================
+   INTRODUCTION CARD
+   GOOGLE COMMENT STYLE
+========================= */
+
+.intro-card {
+  max-width: 900px;
+
+  margin: 30px auto;
+
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius);
+
+  padding: 24px;
+
+  box-shadow: var(--shadow-small);
+
+  transition: 0.2s ease;
+}
+
+.intro-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: var(--shadow);
+}
+
+.intro-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 18px;
+}
+
+.intro-logo {
+  width: 55px;
+  height: 55px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+
+  background: var(--cream);
+
+  border-radius: 50%;
+
+  padding: 5px;
+
+  border: 1px solid var(--border);
+}
+
+.intro-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--green);
+
+  color: var(--white);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+.intro-header h3 {
+  margin: 0;
+
+  font-size: 19px;
+
+  color: var(--charcoal);
+}
+
+.intro-header span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 13px;
+
+  color: #777777;
+}
+
+.intro-card p {
+  margin: 12px 0;
+
+  color: #3D3D3D;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+.intro-card strong {
+  color: var(--dark-green);
+}
+
+
+/* =========================
    SHOP CONTROLS
 ========================= */
 
@@ -591,7 +703,7 @@ body {
 
 
 /* =========================
-   MOBILE
+   TABLET
 ========================= */
 
 @media (max-width: 800px) {
@@ -616,8 +728,16 @@ body {
   .bullet-grid {
     columns: 2;
   }
+
+  .intro-card {
+    padding: 20px;
+  }
 }
 
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 550px) {
 
@@ -667,5 +787,28 @@ body {
   .controls input,
   .controls select {
     width: 100%;
+  }
+
+  .intro-card {
+    margin: 20px auto;
+
+    padding: 18px;
+  }
+
+  .intro-header {
+    gap: 10px;
+  }
+
+  .intro-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .intro-header h3 {
+    font-size: 17px;
+  }
+
+  .intro-card p {
+    font-size: 14px;
   }
 }
