@@ -1,3 +1,13 @@
+/* =========================================================
+   ASIAN AMERICAN GROCERY
+   FULL UPDATED STYLESHEET
+========================================================= */
+
+
+/* =========================================================
+   COLORS / VARIABLES
+========================================================= */
+
 :root {
   --charcoal: #1F1F1F;
   --green: #18A957;
@@ -9,71 +19,113 @@
   --white: #FFFFFF;
   --border: #E8E1D8;
 
-  --shadow: 0 10px 30px rgba(31, 31, 31, 0.08);
-  --shadow-small: 0 5px 15px rgba(31, 31, 31, 0.06);
+  --shadow:
+    0 10px 30px rgba(31, 31, 31, 0.08);
+
+  --shadow-small:
+    0 5px 15px rgba(31, 31, 31, 0.06);
+
+  --shadow-hover:
+    0 16px 35px rgba(31, 31, 31, 0.12);
 
   --radius: 16px;
 }
 
 
-/* =========================
+/* =========================================================
    GENERAL
-========================= */
+========================================================= */
 
 * {
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
 
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   background: var(--beige);
+
   color: var(--charcoal);
+
   line-height: 1.6;
 }
 
+
+img {
+  max-width: 100%;
+}
+
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+
 .container {
+  width: 100%;
+
   max-width: 1100px;
+
   margin: 0 auto;
 }
 
 
-/* =========================
+/* =========================================================
    HEADER
-========================= */
+========================================================= */
 
 .site-header {
   position: sticky;
+
   top: 0;
-  z-index: 100;
 
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
+  z-index: 1000;
 
-  padding: 15px 20px;
+  background:
+    rgba(255, 255, 255, 0.98);
 
-  box-shadow: 0 4px 18px rgba(31, 31, 31, 0.08);
+  border-bottom:
+    1px solid var(--border);
+
+  padding:
+    15px 20px;
+
+  box-shadow:
+    0 4px 18px rgba(31, 31, 31, 0.08);
 }
 
 
-/* =========================
-   BRAND
-========================= */
+/* =========================================================
+   BRAND / LOGO
+========================================================= */
 
 .brand {
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
   gap: 15px;
 }
 
+
 .logo {
   width: 75px;
+
   height: 75px;
 
   object-fit: contain;
@@ -82,115 +134,163 @@ body {
 
   border-radius: 14px;
 
-  padding: 5px;
+  padding: 4px;
 
-  box-shadow: var(--shadow-small);
+  box-shadow:
+    var(--shadow-small);
 }
+
 
 .brand-text h1 {
   margin: 0;
 
   color: var(--charcoal);
 
-  font-size: 26px;
+  font-size: 30px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
 }
 
+
 .brand-text p {
-  margin: 3px 0 0;
+  margin:
+    6px 0 0;
 
   color: var(--dark-green);
 
-  font-weight: 600;
+  font-weight: 700;
+
+  font-size: 16px;
 }
 
 
-/* =========================
+/* =========================================================
    NAVIGATION
-========================= */
+========================================================= */
 
 .nav {
   display: flex;
 
   justify-content: center;
 
+  align-items: center;
+
   flex-wrap: wrap;
 
-  gap: 10px;
+  gap: 14px;
 
-  margin-top: 15px;
+  margin-top: 18px;
 }
+
 
 .nav-btn {
   border: none;
 
-  padding: 10px 18px;
+  padding:
+    11px 27px;
 
-  border-radius: 30px;
+  border-radius:
+    30px;
 
-  background: var(--cream);
+  background:
+    var(--cream);
 
-  color: var(--charcoal);
+  color:
+    var(--charcoal);
 
-  font-weight: bold;
+  font-size:
+    15px;
 
-  cursor: pointer;
+  font-weight:
+    700;
 
-  transition: 0.2s ease;
+  cursor:
+    pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
 
 .nav-btn:hover {
-  background: var(--green);
+  background:
+    var(--green);
 
-  color: var(--white);
+  color:
+    var(--white);
 
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
 }
+
 
 .nav-btn.active {
-  background: var(--red);
+  background:
+    var(--red);
 
-  color: var(--white);
+  color:
+    var(--white);
+
+  box-shadow:
+    0 5px 14px rgba(198, 61, 67, 0.20);
 }
 
 
-/* =========================
-   SECTIONS
-========================= */
+/* =========================================================
+   PAGE SECTIONS
+========================================================= */
 
 .page-section {
   display: none;
 
-  padding: 35px 20px 50px;
+  padding:
+    35px 20px 55px;
 }
+
 
 .page-section.is-active {
   display: block;
 }
 
-.page-section h2 {
-  color: var(--charcoal);
 
-  margin-bottom: 12px;
+.page-section h2 {
+  margin-top: 0;
+
+  margin-bottom: 15px;
+
+  color:
+    var(--charcoal);
 }
 
 
-/* =========================
+/* =========================================================
    SLIDESHOW
-========================= */
+========================================================= */
 
 .slideshow {
   position: relative;
+
+  width: 100%;
 
   height: 420px;
 
   overflow: hidden;
 
-  border-radius: var(--radius);
+  border-radius:
+    var(--radius);
 
-  background: var(--charcoal);
+  background:
+    var(--charcoal);
 
-  box-shadow: var(--shadow);
+  box-shadow:
+    var(--shadow);
 }
+
 
 .slide {
   position: absolute;
@@ -198,118 +298,109 @@ body {
   inset: 0;
 
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
 
   opacity: 0;
 
-  transition: opacity 1s ease;
+  transition:
+    opacity 1s ease;
 }
+
 
 .slide.active {
   opacity: 1;
 }
 
+
 .slide-overlay {
   position: absolute;
 
   left: 0;
+
   right: 0;
+
   bottom: 0;
 
   padding: 28px;
 
-  color: var(--white);
+  color:
+    var(--white);
 
-  background: linear-gradient(
-    transparent,
-    rgba(31, 31, 31, 0.9)
-  );
+  background:
+    linear-gradient(
+      transparent,
+      rgba(31, 31, 31, 0.92)
+    );
 }
+
 
 .slide-overlay h2 {
-  color: var(--white);
-
   margin: 0;
+
+  color:
+    var(--white);
+
+  font-size: 27px;
 }
+
 
 .slide-overlay p {
-  margin: 5px 0 0;
+  margin:
+    5px 0 0;
 
-  color: var(--cream);
+  color:
+    var(--cream);
+
+  font-size:
+    15px;
+
+  font-weight:
+    600;
 }
 
 
-/* =========================
-   INTRODUCTION
-========================= */
-
-.bullet-grid {
-  margin-top: 20px;
-
-  padding: 25px;
-
-  list-style: none;
-
-  columns: 4;
-
-  column-gap: 35px;
-
-  background: var(--white);
-
-  border-radius: var(--radius);
-
-  box-shadow: var(--shadow-small);
-}
-
-.bullet-grid li {
-  margin-bottom: 12px;
-}
-
-.intro-link {
-  text-decoration: none;
-
-  color: var(--charcoal);
-
-  font-weight: 600;
-
-  transition: 0.2s ease;
-}
-
-.intro-link:hover {
-  color: var(--green);
-}
-
-
-/* =========================
+/* =========================================================
    INTRODUCTION CARD
-   GOOGLE COMMENT STYLE
-========================= */
+========================================================= */
 
 .intro-card {
   max-width: 900px;
 
-  margin: 30px auto;
+  margin:
+    30px auto;
 
-  background: var(--white);
+  padding:
+    24px;
 
-  border: 1px solid var(--border);
+  background:
+    var(--white);
 
-  border-radius: var(--radius);
+  border:
+    1px solid var(--border);
 
-  padding: 24px;
+  border-radius:
+    var(--radius);
 
-  box-shadow: var(--shadow-small);
+  box-shadow:
+    var(--shadow-small);
 
-  transition: 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
 
 .intro-card:hover {
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
 
-  box-shadow: var(--shadow);
+  box-shadow:
+    var(--shadow);
 }
+
 
 .intro-header {
   display: flex;
@@ -321,34 +412,42 @@ body {
   margin-bottom: 18px;
 }
 
+
 .intro-logo {
   width: 55px;
+
   height: 55px;
 
   object-fit: contain;
 
   flex-shrink: 0;
 
-  background: var(--cream);
+  background:
+    var(--cream);
 
   border-radius: 50%;
 
   padding: 5px;
 
-  border: 1px solid var(--border);
+  border:
+    1px solid var(--border);
 }
+
 
 .intro-icon {
   width: 50px;
+
   height: 50px;
 
   flex-shrink: 0;
 
   border-radius: 50%;
 
-  background: var(--green);
+  background:
+    var(--green);
 
-  color: var(--white);
+  color:
+    var(--white);
 
   display: flex;
 
@@ -361,419 +460,873 @@ body {
   font-weight: bold;
 }
 
+
 .intro-header h3 {
   margin: 0;
 
-  font-size: 19px;
+  color:
+    var(--charcoal);
 
-  color: var(--charcoal);
+  font-size: 19px;
 }
+
 
 .intro-header span {
   display: block;
 
   margin-top: 2px;
 
-  font-size: 13px;
+  color:
+    #777777;
 
-  color: #777777;
+  font-size: 13px;
 }
+
 
 .intro-card p {
-  margin: 12px 0;
+  margin:
+    12px 0;
 
-  color: #3D3D3D;
+  color:
+    #3D3D3D;
 
-  font-size: 15px;
+  font-size:
+    15px;
 
-  line-height: 1.75;
+  line-height:
+    1.75;
 }
+
 
 .intro-card strong {
-  color: var(--dark-green);
+  color:
+    var(--dark-green);
 }
 
 
-/* =========================
-   SHOP CONTROLS
-========================= */
+/* =========================================================
+   WHAT WE SELL / CATEGORY LIST
+========================================================= */
+
+.bullet-grid {
+  margin-top: 20px;
+
+  padding: 25px;
+
+  list-style: none;
+
+  columns: 4;
+
+  column-gap: 35px;
+
+  background:
+    var(--white);
+
+  border-radius:
+    var(--radius);
+
+  box-shadow:
+    var(--shadow-small);
+}
+
+
+.bullet-grid li {
+  margin-bottom: 12px;
+
+  break-inside: avoid;
+}
+
+
+.intro-link {
+  text-decoration: none;
+
+  color:
+    var(--charcoal);
+
+  font-weight: 600;
+
+  transition:
+    color 0.2s ease;
+}
+
+
+.intro-link:hover {
+  color:
+    var(--green);
+
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   SHOP SECTION
+========================================================= */
+
+/*
+   Shop is wider than the other pages so the cards can
+   match the large 5-column layout from your screenshot.
+*/
+
+#shop .container {
+  max-width: 1620px;
+}
+
+
+/* =========================================================
+   SHOP SEARCH / FILTER
+========================================================= */
 
 .controls {
   display: flex;
 
   justify-content: center;
 
-  gap: 12px;
+  align-items: center;
 
   flex-wrap: wrap;
 
-  margin: 20px 0 25px;
+  gap: 12px;
+
+  margin:
+    20px 0 30px;
 }
+
 
 .controls input,
 .controls select {
-  min-width: 220px;
+  min-width: 240px;
 
-  padding: 12px 15px;
+  padding:
+    12px 17px;
 
-  border: 1px solid var(--border);
+  border:
+    1px solid var(--border);
 
-  border-radius: 30px;
+  border-radius:
+    30px;
 
-  background: var(--white);
+  background:
+    var(--white);
 
-  color: var(--charcoal);
+  color:
+    var(--charcoal);
 
   outline: none;
 
-  font-size: 15px;
+  font-size:
+    15px;
 
-  box-shadow: var(--shadow-small);
+  box-shadow:
+    var(--shadow-small);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
 
 .controls input:focus,
 .controls select:focus {
-  border-color: var(--green);
+  border-color:
+    var(--green);
 
-  box-shadow: 0 0 0 3px rgba(24, 169, 87, 0.15);
+  box-shadow:
+    0 0 0 3px rgba(24, 169, 87, 0.15);
 }
 
 
-/* =========================
-   SHOP PRODUCTS
-========================= */
+.controls input::placeholder {
+  color:
+    #777777;
+}
+
+
+/* =========================================================
+   SHOP PRODUCT GRID
+========================================================= */
 
 .shop-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(
-      auto-fill,
-      minmax(200px, 1fr)
-    );
+    repeat(5, minmax(0, 1fr));
 
-  gap: 18px;
+  gap: 26px;
+
+  align-items: stretch;
 }
 
-.item {
-  background: var(--white);
 
-  border-radius: var(--radius);
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.item {
+  width: 100%;
+
+  min-width: 0;
+
+  background:
+    var(--white);
+
+  border-radius:
+    22px;
 
   overflow: hidden;
 
-  box-shadow: var(--shadow);
+  box-shadow:
+    var(--shadow);
 
-  transition: 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
 
 .item:hover {
-  transform: translateY(-4px);
+  transform:
+    translateY(-4px);
 
-  box-shadow: 0 15px 35px rgba(31, 31, 31, 0.12);
+  box-shadow:
+    var(--shadow-hover);
 }
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
 
 .imgbox {
   width: 100%;
 
-  height: 160px;
+  height: 240px;
 
   overflow: hidden;
 
-  background: var(--cream);
+  background:
+    var(--cream);
 }
 
+
+.imgbox img,
 .item img {
+  display: block;
+
   width: 100%;
 
   height: 100%;
 
   object-fit: cover;
+
+  object-position: center;
 }
+
+
+/* =========================================================
+   PRODUCT NAME
+========================================================= */
 
 .item h4 {
-  margin: 14px 14px 4px;
+  margin:
+    20px 20px 6px;
 
-  color: var(--charcoal);
+  color:
+    var(--charcoal);
 
-  font-size: 17px;
+  font-size:
+    19px;
+
+  font-weight:
+    700;
+
+  line-height:
+    1.35;
 }
+
+
+/* =========================================================
+   PRODUCT PRICE
+========================================================= */
 
 .item p {
-  margin: 0 14px 16px;
+  margin:
+    0 20px 24px;
 
-  color: var(--red);
+  color:
+    var(--red);
 
-  font-weight: bold;
+  font-size:
+    19px;
 
-  font-size: 17px;
+  font-weight:
+    700;
 }
 
 
-/* =========================
+/* =========================================================
    SALE SECTION
-========================= */
+========================================================= */
 
 .sale-cards {
   display: grid;
 
   grid-template-columns:
-    repeat(auto-fit, minmax(250px, 1fr));
+    repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    );
 
   gap: 18px;
 
   margin-top: 20px;
 }
 
+
 .sale-card {
   position: relative;
 
-  background: var(--white);
-
   padding: 22px;
 
-  border-radius: var(--radius);
+  background:
+    var(--white);
 
-  border-top: 5px solid var(--red);
+  border-radius:
+    var(--radius);
 
-  box-shadow: var(--shadow);
+  border-top:
+    5px solid var(--red);
+
+  box-shadow:
+    var(--shadow);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
+
+.sale-card:hover {
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    var(--shadow-hover);
+}
+
 
 .sale-card h3 {
   margin-top: 0;
 
-  color: var(--red);
+  color:
+    var(--red);
 }
+
 
 .sale-card p {
-  color: var(--charcoal);
+  color:
+    var(--charcoal);
 }
 
 
-/* =========================
+/* =========================================================
    CONTACT
-========================= */
+========================================================= */
 
 .contact-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(auto-fit, minmax(260px, 1fr));
+    repeat(
+      auto-fit,
+      minmax(260px, 1fr)
+    );
 
   gap: 18px;
 
   margin-top: 20px;
 }
 
-.contact-card {
-  background: var(--white);
 
+.contact-card {
   padding: 22px;
 
-  border-radius: var(--radius);
+  background:
+    var(--white);
 
-  border-left: 5px solid var(--green);
+  border-radius:
+    var(--radius);
 
-  box-shadow: var(--shadow);
+  border-left:
+    5px solid var(--green);
+
+  box-shadow:
+    var(--shadow);
 }
+
 
 .contact-card h3 {
   margin-top: 0;
 
-  color: var(--dark-green);
+  color:
+    var(--dark-green);
 }
 
+
+.contact-card p {
+  color:
+    var(--charcoal);
+}
+
+
 .contact-card a {
-  color: var(--dark-green);
+  color:
+    var(--dark-green);
 
   text-decoration: none;
 }
+
 
 .contact-card a:hover {
   text-decoration: underline;
 }
 
 
-/* =========================
+/* =========================================================
    BUTTONS
-========================= */
+========================================================= */
 
 .primary-btn {
   display: inline-block;
 
-  margin-top: 12px;
+  margin-top: 15px;
 
-  padding: 11px 18px;
+  padding:
+    11px 18px;
 
   border: none;
 
-  border-radius: 12px;
+  border-radius:
+    12px;
 
-  background: var(--red);
+  background:
+    var(--red);
 
-  color: var(--white);
+  color:
+    var(--white);
 
-  font-weight: bold;
+  font-weight:
+    bold;
 
-  cursor: pointer;
+  cursor:
+    pointer;
 
-  text-decoration: none;
+  text-decoration:
+    none;
 
-  transition: 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
 
 .primary-btn:hover {
-  background: var(--dark-green);
+  background:
+    var(--dark-green);
 
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    var(--shadow-small);
 }
+
 
 .link-btn {
   text-decoration: none;
 }
 
 
-/* =========================
+/* =========================================================
    REVIEWS
-========================= */
+========================================================= */
 
 .reviews {
-  margin-top: 30px;
+  margin-top: 35px;
 }
+
 
 .reviews h3 {
-  color: var(--charcoal);
+  color:
+    var(--charcoal);
 
-  font-size: 23px;
+  font-size:
+    23px;
 }
+
 
 .review-card {
   margin-top: 14px;
 
   padding: 18px;
 
-  background: var(--white);
+  background:
+    var(--white);
 
-  border-radius: var(--radius);
+  border-radius:
+    var(--radius);
 
-  border-left: 4px solid var(--green);
+  border-left:
+    4px solid var(--green);
 
-  box-shadow: var(--shadow-small);
+  box-shadow:
+    var(--shadow-small);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
+
+.review-card:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    var(--shadow);
+}
+
 
 .stars {
-  color: var(--red);
+  color:
+    #F4B400;
 
-  font-size: 18px;
+  font-size:
+    18px;
 
-  letter-spacing: 2px;
+  letter-spacing:
+    2px;
 }
+
 
 .review-meta {
   margin-top: 4px;
 
-  color: var(--dark-green);
+  color:
+    var(--dark-green);
 
-  font-size: 13px;
+  font-size:
+    13px;
 
-  font-weight: 600;
+  font-weight:
+    600;
 }
+
 
 .review-text {
-  margin: 8px 0 0;
+  margin:
+    8px 0 0;
 
-  color: var(--charcoal);
+  color:
+    var(--charcoal);
 }
 
 
-/* =========================
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 .footer {
-  padding: 22px 16px;
+  padding:
+    22px 16px;
 
   text-align: center;
 
-  background: var(--charcoal);
+  background:
+    var(--charcoal);
 
-  color: var(--cream);
+  color:
+    var(--cream);
 }
+
 
 .footer p {
   margin: 0;
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* =========================================================
+   LARGE SCREEN
+========================================================= */
 
-@media (max-width: 800px) {
+@media (min-width: 1650px) {
 
-  .brand {
-    justify-content: flex-start;
+  #shop .container {
+    max-width: 1620px;
   }
+
+}
+
+
+/* =========================================================
+   SMALL DESKTOP / LARGE TABLET
+========================================================= */
+
+@media (max-width: 1300px) {
+
+  #shop .container {
+    max-width: 1180px;
+  }
+
+
+  .shop-grid {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+  }
+
+
+  .imgbox {
+    height: 230px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
 
   .brand-text h1 {
-    font-size: 21px;
+    font-size: 24px;
   }
+
+
+  .brand-text p {
+    font-size: 14px;
+  }
+
 
   .logo {
-    width: 65px;
-    height: 65px;
+    width: 68px;
+
+    height: 68px;
   }
 
+
   .slideshow {
-    height: 330px;
+    height: 340px;
   }
+
 
   .bullet-grid {
     columns: 2;
   }
 
+
   .intro-card {
     padding: 20px;
   }
+
+
+  .shop-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+  }
+
+
+  .imgbox {
+    height: 210px;
+  }
+
+
+  .item h4 {
+    font-size: 17px;
+  }
+
+
+  .item p {
+    font-size: 17px;
+  }
+
 }
 
 
-/* =========================
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 720px) {
+
+  .site-header {
+    padding:
+      12px 15px;
+  }
+
+
+  .brand {
+    justify-content: flex-start;
+  }
+
+
+  .brand-text h1 {
+    font-size: 21px;
+  }
+
+
+  .brand-text p {
+    font-size: 13px;
+  }
+
+
+  .logo {
+    width: 62px;
+
+    height: 62px;
+  }
+
+
+  .nav {
+    gap: 8px;
+
+    margin-top: 12px;
+  }
+
+
+  .nav-btn {
+    padding:
+      9px 18px;
+
+    font-size: 14px;
+  }
+
+
+  .page-section {
+    padding:
+      25px 15px 40px;
+  }
+
+
+  .slideshow {
+    height: 280px;
+  }
+
+
+  .slide-overlay {
+    padding: 20px;
+  }
+
+
+  .slide-overlay h2 {
+    font-size: 22px;
+  }
+
+
+  .slide-overlay p {
+    font-size: 13px;
+  }
+
+
+  .controls input,
+  .controls select {
+    width: 100%;
+
+    min-width: 100%;
+  }
+
+
+  .shop-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+
+  .imgbox {
+    height: 190px;
+  }
+
+
+  .item {
+    border-radius: 18px;
+  }
+
+
+  .item h4 {
+    margin:
+      14px 14px 5px;
+
+    font-size: 16px;
+  }
+
+
+  .item p {
+    margin:
+      0 14px 18px;
+
+    font-size: 16px;
+  }
+
+}
+
+
+/* =========================================================
    MOBILE
-========================= */
+========================================================= */
 
 @media (max-width: 550px) {
 
   .site-header {
-    padding: 12px;
+    padding: 10px 12px;
   }
+
 
   .brand {
     gap: 10px;
   }
 
+
   .brand-text h1 {
     font-size: 18px;
   }
+
 
   .brand-text p {
     font-size: 12px;
   }
 
+
   .logo {
     width: 58px;
+
     height: 58px;
   }
 
+
+  .nav {
+    gap: 6px;
+  }
+
+
   .nav-btn {
-    padding: 9px 13px;
+    padding:
+      9px 13px;
 
     font-size: 13px;
   }
 
+
   .page-section {
-    padding: 24px 12px 35px;
+    padding:
+      22px 12px 35px;
   }
+
 
   .slideshow {
     height: 250px;
@@ -781,37 +1334,172 @@ body {
     border-radius: 12px;
   }
 
+
+  .slide-overlay {
+    padding: 16px;
+  }
+
+
+  .slide-overlay h2 {
+    font-size: 20px;
+  }
+
+
+  .slide-overlay p {
+    font-size: 12px;
+  }
+
+
+  .intro-card {
+    margin:
+      20px auto;
+
+    padding: 18px;
+  }
+
+
+  .intro-header {
+    gap: 10px;
+  }
+
+
+  .intro-logo {
+    width: 48px;
+
+    height: 48px;
+  }
+
+
+  .intro-header h3 {
+    font-size: 17px;
+  }
+
+
+  .intro-card p {
+    font-size: 14px;
+  }
+
+
   .bullet-grid {
     columns: 1;
 
     padding: 18px;
   }
 
+
+  .controls {
+    gap: 8px;
+
+    margin:
+      15px 0 22px;
+  }
+
+
   .controls input,
   .controls select {
     width: 100%;
+
+    min-width: 100%;
   }
 
-  .intro-card {
-    margin: 20px auto;
 
-    padding: 18px;
-  }
+  .shop-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
 
-  .intro-header {
     gap: 10px;
   }
 
-  .intro-logo {
-    width: 48px;
-    height: 48px;
+
+  .item {
+    border-radius: 16px;
   }
 
-  .intro-header h3 {
+
+  .imgbox {
+    height: 160px;
+  }
+
+
+  .item h4 {
+    margin:
+      12px 12px 4px;
+
+    font-size: 14px;
+
+    line-height: 1.3;
+  }
+
+
+  .item p {
+    margin:
+      0 12px 15px;
+
+    font-size: 15px;
+  }
+
+
+  .sale-card,
+  .contact-card {
+    padding: 18px;
+  }
+
+
+  .review-card {
+    padding: 16px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .brand-text h1 {
+    font-size: 16px;
+  }
+
+
+  .brand-text p {
+    font-size: 11px;
+  }
+
+
+  .logo {
+    width: 52px;
+
+    height: 52px;
+  }
+
+
+  .nav-btn {
+    padding:
+      8px 10px;
+
+    font-size: 12px;
+  }
+
+
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .imgbox {
+    height: 230px;
+  }
+
+
+  .item h4 {
     font-size: 17px;
   }
 
-  .intro-card p {
-    font-size: 14px;
+
+  .item p {
+    font-size: 17px;
   }
+
 }
