@@ -1,464 +1,1516 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Asian American Grocery</title>
-<link rel="icon" type="image/png" href="images/logo/logo.png">
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Asian American Grocery - fresh produce, Asian groceries, snacks, drinks, rice, noodles, frozen foods and more."
+  >
+
+  <title>Asian American Grocery</title>
+
+  <!-- Browser Tab Logo -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/logo/logo.png"
+  >
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
+
+
+<!-- =================================
+     HEADER
+================================= -->
+
 <header class="site-header">
+
   <div class="brand">
-    <img class="logo" src="images/logo/logo.png" alt="Asian American Grocery logo" />
+
+    <img
+      class="logo"
+      src="images/logo/logo.png"
+      alt="Asian American Grocery logo"
+    >
+
     <div class="brand-text">
-      <h1>Asian American Grocery</h1>
-      <p>Your One-Stop Asian Food Market</p>
+
+      <h1>
+        Asian American Grocery
+      </h1>
+
+      <p>
+        Your One-Stop Asian Food Market
+      </p>
+
     </div>
+
   </div>
 
-  <!-- "Hidden menu" = sections are hidden until clicked -->
+
+  <!-- NAVIGATION -->
+
   <nav class="nav">
-    <button class="nav-btn active" data-target="intro">Introduction</button>
-    <button class="nav-btn" data-target="shop">Shop</button>
-    <button class="nav-btn" data-target="sale">Sale</button>
-    <button class="nav-btn" data-target="contact">Contact</button>
+
+    <button
+      class="nav-btn active"
+      data-target="intro"
+    >
+      Introduction
+    </button>
+
+
+    <button
+      class="nav-btn"
+      data-target="shop"
+    >
+      Shop
+    </button>
+
+
+    <button
+      class="nav-btn"
+      data-target="sale"
+    >
+      Sale
+    </button>
+
+
+    <button
+      class="nav-btn"
+      data-target="contact"
+    >
+      Contact
+    </button>
+
   </nav>
+
 </header>
 
+
+
 <main>
-  <!-- INTRO (slideshow moved here; Home removed) -->
-  <section id="intro" class="page-section is-active">
-<div class="slideshow">
-  <img class="slide active" src="images/slide/cover1.jpg" alt="Slide 1">
-  <img class="slide" src="images/slide/cover2.jpg" alt="Slide 2">
-  <img class="slide" src="images/slide/cover3.jpg" alt="Slide 3">
-  <img class="slide" src="images/slide/cover4.jpg" alt="Slide 4">
-  <img class="slide" src="images/slide/cover5.jpg" alt="Slide 5">
-  <img class="slide" src="images/slide/cover6.png" alt="Slide 6">
-  <img class="slide" src="images/slide/cover7.png" alt="Slide 7">
-  <img class="slide" src="images/slide/cover8.png" alt="Slide 8">
-  <div class="slide-overlay">
-        <h2>Fresh • Snacks • Drinks • More</h2>
-        <p>Pictures of the Asian American Grocery.</p>
+
+
+<!-- =================================
+     INTRODUCTION
+================================= -->
+
+<section
+  id="intro"
+  class="page-section is-active"
+>
+
+
+  <div class="container">
+
+
+    <!-- ===============================
+         SLIDESHOW
+    =============================== -->
+
+    <div class="slideshow">
+
+
+      <img
+        class="slide active"
+        src="images/slide/cover1.jpg"
+        alt="Asian American Grocery"
+      >
+
+
+      <img
+        class="slide"
+        src="images/slide/cover2.jpg"
+        alt="Asian grocery products"
+      >
+
+
+      <img
+        class="slide"
+        src="images/slide/cover3.jpg"
+        alt="Fresh Asian groceries"
+      >
+
+
+      <img
+        class="slide"
+        src="images/slide/cover4.jpg"
+        alt="Asian grocery selection"
+      >
+
+
+      <img
+        class="slide"
+        src="images/slide/cover5.jpg"
+        alt="Asian food market"
+      >
+
+
+      <img
+        class="slide"
+        src="images/slide/cover6.png"
+        alt="Asian grocery store"
+      >
+
+
+      <img
+        class="slide"
+        src="images/slide/cover7.png"
+        alt="Asian food products"
+      >
+
+
+      <img
+        class="slide"
+        src="images/slide/cover8.png"
+        alt="Asian American Grocery products"
+      >
+
+
+      <div class="slide-overlay">
+
+        <h2>
+          Fresh • Authentic • Local
+        </h2>
+
+        <p>
+          Discover your favorite Asian groceries all in one place.
+        </p>
+
       </div>
+
     </div>
 
-    <div class="container">
-      <h2>Introduction</h2>
-       <p>
-      Welcome to <strong>Asian American Grocery</strong>, your neighborhood
-      destination for fresh, flavorful, and authentic Asian food products.
-      We offer a wide variety of groceries, including fresh vegetables and
-      fruits, rice, noodles, snacks, sweets, frozen foods, sauces, spices,
-      drinks, tea, bakery items, seafood, meat, and everyday pantry essentials.
-    </p>
 
-    <p>
-      Our goal is to make it easy for families and food lovers to find quality
-      Asian ingredients and popular products all in one convenient place.
-      Whether you are preparing a traditional meal, trying something new,
-      or simply looking for your favorite snacks and drinks, we are here to
-      provide a friendly and welcoming shopping experience.
-    </p>
 
-    <p>
-      At <strong>Asian American Grocery</strong>, we value freshness, variety,
-      quality, and our local community. We look forward to welcoming you to
-      our store.
-    </p>
-      <p>We sell:</p>
-      <ul class="bullet-grid">
-        <li><a class="intro-link" data-cat="produce" href="#shop">Fresh Vegetables & fruits</a></li>
-        <li><a class="intro-link" data-cat="rice" href="#shop">Rice & Noodles</a></li>
-        <li><a class="intro-link" data-cat="snack" href="#shop">Snacks & Sweets</a></li>
-        <li><a class="intro-link" data-cat="frozen" href="#shop">Frozen Dumplings</a></li>
-        <li><a class="intro-link" data-cat="all" href="#shop">Seafood & Meat</a></li>
-        <li><a class="intro-link" data-cat="all" href="#shop">Sauces & Spices</a></li>
-        <li><a class="intro-link" data-cat="drink" href="#shop">Drinks & Tea</a></li>
-        <li><a class="intro-link" data-cat="all" href="#shop">Bakery Items</a></li>
-      </ul>
+    <!-- ===============================
+         GOOGLE-STYLE INTRODUCTION CARD
+    =============================== -->
+
+    <div class="intro-card">
+
+
+      <div class="intro-header">
+
+        <img
+          class="intro-logo"
+          src="images/logo/logo.png"
+          alt="Asian American Grocery logo"
+        >
+
+
+        <div>
+
+          <h3>
+            Asian American Grocery
+          </h3>
+
+          <span>
+            About Our Store
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <p>
+        Welcome to
+        <strong>Asian American Grocery</strong>,
+        your neighborhood destination for fresh,
+        flavorful, and authentic Asian food products.
+        We offer a wide variety of groceries including
+        fresh vegetables and fruits, rice, noodles,
+        snacks, sweets, frozen foods, sauces, spices,
+        drinks, tea, bakery items, seafood, meat,
+        and everyday pantry essentials.
+      </p>
+
+
+      <p>
+        Our goal is to make it easy for families and
+        food lovers to find quality Asian ingredients
+        and popular products all in one convenient place.
+        Whether you are preparing a traditional meal,
+        trying something new, or simply looking for your
+        favorite snacks and drinks, we are here to provide
+        a friendly and welcoming shopping experience.
+      </p>
+
+
+      <p>
+        At
+        <strong>Asian American Grocery</strong>,
+        we value freshness, variety, quality,
+        and our local community.
+        We look forward to welcoming you to our store.
+      </p>
+
+
     </div>
-  </section>
-
-  <!-- SHOP -->
-  <section id="shop" class="page-section">
-    <div class="container">
-      <h2>Shop</h2>
-
-      <div class="controls">
-        <input type="text" id="search" placeholder="Search items..." />
-        <select id="category">
-          <option value="all">All</option>
-          <option value="snack">Snacks</option>
-          <option value="drink">Drinks</option>
-          <option value="dairy">Dairy</option>
-          <option value="rice">Rice</option>
-          <option value="frozen">Frozen</option>
-          <option value="produce">Produce</option>
-        </select>
-      </div>
-
-      <div class="shop-grid">
-<!-- =========================
-     FRUITS
-========================= -->
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/apple.png" alt="Apple">
-  </div>
-  <h4>Apple</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/banana.png" alt="Banana">
-  </div>
-  <h4>Banana</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/thai-green-banana.png" alt="Thai Green Banana">
-  </div>
-  <h4>Thai Green Banana</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/mango.png" alt="Mango">
-  </div>
-  <h4>Mango</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/honey-mango.png" alt="Honey Mango">
-  </div>
-  <h4>Honey Mango</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/asian-pear.png" alt="Asian Pear">
-  </div>
-  <h4>Asian Pear</h4>
-  <p>$3</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/lemon.png" alt="Lemon">
-  </div>
-  <h4>Lemon</h4>
-  <p>$0.69</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/lime.png" alt="Lime">
-  </div>
-  <h4>Lime</h4>
-  <p>$0.89</p>
-</div>
 
 
-<!-- =========================
-     VEGETABLES
-========================= -->
 
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/bean-sprouts.png" alt="Bean Sprouts">
-  </div>
-  <h4>Bean Sprouts</h4>
-  <p>$2</p>
-</div>
+    <!-- ===============================
+         WHAT WE SELL
+    =============================== -->
 
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/bok-choy.png" alt="Bok Choy">
-  </div>
-  <h4>Bok Choy</h4>
-  <p>$2</p>
-</div>
+    <h2>
+      What We Sell
+    </h2>
 
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/chinese-cabbage.png" alt="Chinese Cabbage">
-  </div>
-  <h4>Chinese Cabbage</h4>
-  <p>$2</p>
-</div>
 
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/mustard-spinach.png" alt="Mustard Spinach">
-  </div>
-  <h4>Mustard Spinach</h4>
-  <p>$2</p>
-</div>
+    <ul class="bullet-grid">
 
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/thai-basil.png" alt="Thai Basil">
-  </div>
-  <h4>Thai Basil</h4>
-  <p>$2</p>
-</div>
 
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/coriander.png" alt="Coriander">
-  </div>
-  <h4>Coriander</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/spring-onion.png" alt="Spring Onion">
-  </div>
-  <h4>Spring Onion</h4>
-  <p>$0.99</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/long-beans.png" alt="Long Beans">
-  </div>
-  <h4>Long Beans</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/okra.png" alt="Okra">
-  </div>
-  <h4>Okra</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/eggplant.png" alt="Thai Eggplant">
-  </div>
-  <h4>Thai Eggplant</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/long-eggplant.png" alt="long Eggplant">
-  </div>
-  <h4>Thai Eggplant</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/tomato.png" alt="Tomato">
-  </div>
-  <h4>Tomato</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/radish-daikon.png" alt="Radish Daikon">
-  </div>
-  <h4>Radish (Daikon)</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/bamboo-shoots.png" alt="Bamboo Shoots">
-  </div>
-  <h4>Bamboo Shoots</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/pumpkin.png" alt="Pumpkin">
-  </div>
-  <h4>Pumpkin</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/potato.png" alt="Potato">
-  </div>
-  <h4>Potato</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/sweet-potato.png
-" alt="Sweet Potato">
-  </div>
-  <h4>Sweet Potato</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/yam.png" alt="Yam">
-  </div>
-  <h4>Yam</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/onion.png" alt="Onion">
-  </div>
-  <h4>Onion</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/shallot.png" alt="Shallot">
-  </div>
-  <h4>Shallot</h4>
-  <p>$2</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/garlic.png" alt="Garlic">
-  </div>
-  <h4>Garlic</h4>
-  <p>$2.99</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/ginger.png" alt="Ginger">
-  </div>
-  <h4>Ginger</h4>
-  <p>$2.99</p>
-</div>
-
-<div class="item" data-cat="produce">
-  <div class="imgbox">
-    <img src="images/produce/lemongrass.png" alt="Lemongrass">
-  </div>
-  <h4>Lemongrass</h4>
-  <p>$2</p>
-</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SALE -->
-  <section id="sale" class="page-section">
-    <div class="container">
-      <h2>Sales & Specials</h2>
-      <div class="sale-cards">
-        <div class="sale-card">
-          <h3>Snack Special</h3>
-          <p>Buy 2 Get 1 Free on select snacks.</p>
-        </div>
-        <div class="sale-card">
-          <h3>Weekend Drink Deal</h3>
-          <p>10% off bottled drinks this weekend.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="page-section">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Info</h3>
-          <p><b>Email:</b> 2025asianmarket@gmail.com</p>
-          <p><b>Phone:</b> 704-812-8454</p>
-          <p><b>Phone:</b> 980-289-2458</p>
-          <p><b>Facebook:</b> Store Page</p>
-        </div>
-
-        <div class="contact-card">
-          <h3>Store Schedule</h3>
-          <p>Open 7 Days A Week</p>
-          <p>8AM–8PM</p>
-        </div>
-      </div>
-
-      <!-- Demo reviews (6–7) under contact/schedule -->
-      <div class="reviews">
-        <h3>Customer Reviews</h3>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <div class="review-meta">Customer Name • Date</div>
-          <p class="review-text">Amazing selection and super friendly staff!</p>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <div class="review-meta">Customer Name • Date</div>
-          <p class="review-text">Clean store, great prices, and fresh produce.</p>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★☆</div>
-          <div class="review-meta">Customer Name • Date</div>
-          <p class="review-text">Lots of snacks and drinks I can’t find anywhere else.</p>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <div class="review-meta">Customer Name • Date</div>
-          <p class="review-text">Frozen dumplings are top-tier. Will come again!</p>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★☆</div>
-          <div class="review-meta">Customer Name • Date</div>
-          <p class="review-text">Good variety of noodles and sauces. Love it.</p>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <div class="review-meta">Customer Name • Date</div>
-          <p class="review-text">Fast checkout and the store is always stocked.</p>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <div class="review-meta">Customer Name • Date</div>
-          <p class="review-text">Best local Asian grocery — highly recommend!</p>
-        </div>
-
-        <!-- Button to Google Reviews (moved to bottom) -->
-        <a class="primary-btn link-btn" href="https://www.google.com/search?q=your+store+name+google+reviews" target="_blank" rel="noopener noreferrer">
-          Leave a Google Review
+      <li>
+        <a
+          class="intro-link"
+          data-cat="produce"
+          href="#shop"
+        >
+          Fresh Vegetables & Fruits
         </a>
-      </div>
+      </li>
+
+
+      <li>
+        <a
+          class="intro-link"
+          data-cat="rice"
+          href="#shop"
+        >
+          Rice & Noodles
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          class="intro-link"
+          data-cat="snack"
+          href="#shop"
+        >
+          Snacks & Sweets
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          class="intro-link"
+          data-cat="frozen"
+          href="#shop"
+        >
+          Frozen Foods
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          class="intro-link"
+          data-cat="all"
+          href="#shop"
+        >
+          Seafood & Meat
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          class="intro-link"
+          data-cat="all"
+          href="#shop"
+        >
+          Sauces & Spices
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          class="intro-link"
+          data-cat="drink"
+          href="#shop"
+        >
+          Drinks & Tea
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          class="intro-link"
+          data-cat="all"
+          href="#shop"
+        >
+          Bakery Items
+        </a>
+      </li>
+
+
+    </ul>
+
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- =================================
+     SHOP
+================================= -->
+
+<section
+  id="shop"
+  class="page-section"
+>
+
+  <div class="container">
+
+
+    <h2>
+      Shop
+    </h2>
+
+
+    <!-- SEARCH / FILTER -->
+
+    <div class="controls">
+
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Search items..."
+      >
+
+
+      <select id="category">
+
+        <option value="all">
+          All Categories
+        </option>
+
+        <option value="produce">
+          Fresh Produce
+        </option>
+
+        <option value="rice">
+          Rice & Noodles
+        </option>
+
+        <option value="snack">
+          Snacks
+        </option>
+
+        <option value="drink">
+          Drinks
+        </option>
+
+        <option value="frozen">
+          Frozen Foods
+        </option>
+
+      </select>
+
 
     </div>
-  </section>
+
+
+
+    <div class="shop-grid">
+
+
+      <!-- =================================
+           FRUITS
+      ================================= -->
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/apple.png"
+            alt="Apple"
+          >
+
+        </div>
+
+        <h4>Apple</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/banana.png"
+            alt="Banana"
+          >
+
+        </div>
+
+        <h4>Banana</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/thai-green-banana.png"
+            alt="Thai Green Banana"
+          >
+
+        </div>
+
+        <h4>
+          Thai Green Banana
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/mango.png"
+            alt="Mango"
+          >
+
+        </div>
+
+        <h4>Mango</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/honey-mango.png"
+            alt="Honey Mango"
+          >
+
+        </div>
+
+        <h4>
+          Honey Mango
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/asian-pear.png"
+            alt="Asian Pear"
+          >
+
+        </div>
+
+        <h4>
+          Asian Pear
+        </h4>
+
+        <p>$3</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/lemon.png"
+            alt="Lemon"
+          >
+
+        </div>
+
+        <h4>Lemon</h4>
+
+        <p>$0.69</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/lime.png"
+            alt="Lime"
+          >
+
+        </div>
+
+        <h4>Lime</h4>
+
+        <p>$0.89</p>
+
+      </div>
+
+
+
+
+      <!-- =================================
+           VEGETABLES
+      ================================= -->
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/bean-sprouts.png"
+            alt="Bean Sprouts"
+          >
+
+        </div>
+
+        <h4>
+          Bean Sprouts
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/bok-choy.png"
+            alt="Bok Choy"
+          >
+
+        </div>
+
+        <h4>Bok Choy</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/chinese-cabbage.png"
+            alt="Chinese Cabbage"
+          >
+
+        </div>
+
+        <h4>
+          Chinese Cabbage
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/mustard-spinach.png"
+            alt="Mustard Spinach"
+          >
+
+        </div>
+
+        <h4>
+          Mustard Spinach
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/thai-basil.png"
+            alt="Thai Basil"
+          >
+
+        </div>
+
+        <h4>
+          Thai Basil
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/coriander.png"
+            alt="Coriander"
+          >
+
+        </div>
+
+        <h4>Coriander</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/spring-onion.png"
+            alt="Spring Onion"
+          >
+
+        </div>
+
+        <h4>
+          Spring Onion
+        </h4>
+
+        <p>$0.99</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/long-beans.png"
+            alt="Long Beans"
+          >
+
+        </div>
+
+        <h4>
+          Long Beans
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/okra.png"
+            alt="Okra"
+          >
+
+        </div>
+
+        <h4>Okra</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/eggplant.png"
+            alt="Thai Eggplant"
+          >
+
+        </div>
+
+        <h4>
+          Thai Eggplant
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/tomato.png"
+            alt="Tomato"
+          >
+
+        </div>
+
+        <h4>Tomato</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/radish-daikon.png"
+            alt="Radish Daikon"
+          >
+
+        </div>
+
+        <h4>
+          Radish (Daikon)
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/bamboo-shoots.png"
+            alt="Bamboo Shoots"
+          >
+
+        </div>
+
+        <h4>
+          Bamboo Shoots
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/pumpkin.png"
+            alt="Pumpkin"
+          >
+
+        </div>
+
+        <h4>Pumpkin</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/potato.png"
+            alt="Potato"
+          >
+
+        </div>
+
+        <h4>Potato</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/sweet-potato.png"
+            alt="Sweet Potato"
+          >
+
+        </div>
+
+        <h4>
+          Sweet Potato
+        </h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/yam.png"
+            alt="Yam"
+          >
+
+        </div>
+
+        <h4>Yam</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/onion.png"
+            alt="Onion"
+          >
+
+        </div>
+
+        <h4>Onion</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/shallot.png"
+            alt="Shallot"
+          >
+
+        </div>
+
+        <h4>Shallot</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/garlic.png"
+            alt="Garlic"
+          >
+
+        </div>
+
+        <h4>Garlic</h4>
+
+        <p>$2.99</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/ginger.png"
+            alt="Ginger"
+          >
+
+        </div>
+
+        <h4>Ginger</h4>
+
+        <p>$2.99</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="produce">
+
+        <div class="imgbox">
+
+          <img
+            src="images/produce/lemongrass.png"
+            alt="Lemongrass"
+          >
+
+        </div>
+
+        <h4>Lemongrass</h4>
+
+        <p>$2</p>
+
+      </div>
+
+
+
+
+      <!-- =================================
+           OTHER SAMPLE PRODUCTS
+      ================================= -->
+
+
+      <div class="item" data-cat="rice">
+
+        <div class="imgbox">
+
+          <img
+            src="https://picsum.photos/320/220?random=51"
+            alt="Jasmine Rice"
+          >
+
+        </div>
+
+        <h4>
+          Jasmine Rice
+        </h4>
+
+        <p>$15</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="rice">
+
+        <div class="imgbox">
+
+          <img
+            src="https://picsum.photos/320/220?random=52"
+            alt="Ramen"
+          >
+
+        </div>
+
+        <h4>
+          Ramen Pack
+        </h4>
+
+        <p>$6</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="snack">
+
+        <div class="imgbox">
+
+          <img
+            src="https://picsum.photos/320/220?random=53"
+            alt="Pocky"
+          >
+
+        </div>
+
+        <h4>Pocky</h4>
+
+        <p>$3</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="snack">
+
+        <div class="imgbox">
+
+          <img
+            src="https://picsum.photos/320/220?random=54"
+            alt="Mochi"
+          >
+
+        </div>
+
+        <h4>Mochi</h4>
+
+        <p>$4</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="drink">
+
+        <div class="imgbox">
+
+          <img
+            src="https://picsum.photos/320/220?random=55"
+            alt="Ramune Soda"
+          >
+
+        </div>
+
+        <h4>
+          Ramune Soda
+        </h4>
+
+        <p>$4</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="drink">
+
+        <div class="imgbox">
+
+          <img
+            src="https://picsum.photos/320/220?random=56"
+            alt="Milk Tea"
+          >
+
+        </div>
+
+        <h4>
+          Milk Tea
+        </h4>
+
+        <p>$5</p>
+
+      </div>
+
+
+
+      <div class="item" data-cat="frozen">
+
+        <div class="imgbox">
+
+          <img
+            src="https://picsum.photos/320/220?random=57"
+            alt="Frozen Dumplings"
+          >
+
+        </div>
+
+        <h4>
+          Frozen Dumplings
+        </h4>
+
+        <p>$9</p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- =================================
+     SALE
+================================= -->
+
+<section
+  id="sale"
+  class="page-section"
+>
+
+  <div class="container">
+
+    <h2>
+      Sales & Specials
+    </h2>
+
+
+    <div class="sale-cards">
+
+
+      <div class="sale-card">
+
+        <h3>
+          Snack Special
+        </h3>
+
+        <p>
+          Buy 2 Get 1 Free on selected snacks.
+        </p>
+
+      </div>
+
+
+      <div class="sale-card">
+
+        <h3>
+          Weekend Drink Deal
+        </h3>
+
+        <p>
+          10% off selected bottled drinks this weekend.
+        </p>
+
+      </div>
+
+
+      <div class="sale-card">
+
+        <h3>
+          Fresh Produce Special
+        </h3>
+
+        <p>
+          Visit our store for weekly fresh produce specials.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- =================================
+     CONTACT
+================================= -->
+
+<section
+  id="contact"
+  class="page-section"
+>
+
+  <div class="container">
+
+
+    <h2>
+      Contact Us
+    </h2>
+
+
+    <div class="contact-grid">
+
+
+      <!-- STORE INFORMATION -->
+
+      <div class="contact-card">
+
+
+        <h3>
+          Store Information
+        </h3>
+
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:2025asianmarket@gmail.com">
+            2025asianmarket@gmail.com
+          </a>
+        </p>
+
+
+        <p>
+          <strong>Phone:</strong>
+
+          <a href="tel:7048128454">
+            704-812-8454
+          </a>
+        </p>
+
+
+        <p>
+          <strong>Phone:</strong>
+
+          <a href="tel:9802892458">
+            980-289-2458
+          </a>
+        </p>
+
+
+        <p>
+          <strong>Facebook:</strong>
+          Store Page
+        </p>
+
+
+      </div>
+
+
+
+      <!-- HOURS -->
+
+      <div class="contact-card">
+
+
+        <h3>
+          Store Hours
+        </h3>
+
+
+        <p>
+          <strong>
+            Open 7 Days A Week
+          </strong>
+        </p>
+
+
+        <p>
+          8:00 AM – 8:00 PM
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <!-- =================================
+         REVIEWS
+    ================================= -->
+
+    <div class="reviews">
+
+
+      <h3>
+        Customer Reviews
+      </h3>
+
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <div class="review-meta">
+          Customer Name • Date
+        </div>
+
+        <p class="review-text">
+          Amazing selection and super friendly staff!
+        </p>
+
+      </div>
+
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <div class="review-meta">
+          Customer Name • Date
+        </div>
+
+        <p class="review-text">
+          Clean store, great prices, and fresh produce.
+        </p>
+
+      </div>
+
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★☆
+        </div>
+
+        <div class="review-meta">
+          Customer Name • Date
+        </div>
+
+        <p class="review-text">
+          Lots of snacks and drinks I cannot find anywhere else.
+        </p>
+
+      </div>
+
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <div class="review-meta">
+          Customer Name • Date
+        </div>
+
+        <p class="review-text">
+          Great selection of frozen foods and Asian groceries.
+        </p>
+
+      </div>
+
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <div class="review-meta">
+          Customer Name • Date
+        </div>
+
+        <p class="review-text">
+          Friendly service and a great local grocery store.
+        </p>
+
+      </div>
+
+
+
+      <a
+        class="primary-btn link-btn"
+        href="https://www.google.com/search?q=Asian+American+Grocery+reviews"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Leave a Google Review
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
 </main>
 
+
+
+
+<!-- =================================
+     FOOTER
+================================= -->
+
 <footer class="footer">
-  <p>© 2026 Asian American Grocery</p>
+
+  <p>
+    © 2026 Asian American Grocery
+  </p>
+
 </footer>
 
+
+
 <script src="script.js"></script>
+
+
 </body>
+
 </html>
